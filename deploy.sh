@@ -1,6 +1,6 @@
 docker build -t mattre/multi-client:latest -t mattre/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t mattre/multi-server:latest -t mattre/multi-client:$SHA -f ./server/Dockerfile ./server
-docker build -t mattre/multi-worker:latest -t mattre/multi-client:$SHA -f ./worker/Dockerfile ./worker
+docker build -t mattre/multi-server:latest -t mattre/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t mattre/multi-worker:latest -t mattre/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push mattre/multi-client:latest
 docker push mattre/multi-server:latest
